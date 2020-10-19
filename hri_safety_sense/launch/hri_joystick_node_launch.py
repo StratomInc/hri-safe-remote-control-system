@@ -13,8 +13,8 @@ def generate_launch_description():
   return LaunchDescription([
     Node(
       package="hri_safety_sense",
-      node_executable="hri_joystick_node",
-      node_name="hri_joystick_node",
-      arguments=['__params:=' + default_params_yaml],
+      executable="hri_joystick_node",
+      name="hri_joystick_node",
+      parameters=[default_params_yaml],
     ),
   ])
